@@ -1,1 +1,1 @@
-provider "tfe" {}
+provider "hcloud" {}
