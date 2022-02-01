@@ -4,7 +4,7 @@ name: Terraform
 on:
   push:
     branches:
-      - main
+      - develop
   pull_request:
 
 jobs:
@@ -14,6 +14,16 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+      - name: Environment (stage)
+        id: stage
+        if: ${{ github.base_ref == 'develop' || github.ref == 'refs/heads/develop' }}
+        run: |
+          echo "TF_WORKSPACE=stage" >> $GITHUB_ENV
+      - name: Environment (prod)
+        id: prod
+        if: ${{ github.base_ref == 'main' || github.ref == 'refs/heads/main' }}
+        run: |
+          echo "TF_WORKSPACE=prod" >> $GITHUB_ENV
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v1
         with:

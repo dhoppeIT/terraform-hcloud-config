@@ -1,15 +1,15 @@
 ---
 repository:
-  name: terraform-root-module
-  description: Terraform module to manage the FIXME resources
-  homepage: https://github.com/dhoppeIT/terraform-FIXME-config
-  topics: terraform, FIXME
-  private: true
+  name: terraform-hcloud-config
+  description: Terraform module to manage the Hetzner Cloud resources
+  homepage: https://github.com/dhoppeIT/terraform-hcloud-config
+  topics: terraform, hcloud
+  private: false
   has_issues: true
   has_projects: false
   has_wiki: false
   has_downloads: true
-  default_branch: main
+  default_branch: develop
   allow_squash_merge: true
   allow_merge_commit: true
   allow_rebase_merge: true
@@ -58,6 +58,17 @@ labels:
 
 branches:
   - name: main
+    protection:
+      required_pull_request_reviews:
+        required_approving_review_count: 1
+        dismiss_stale_reviews: true
+      required_status_checks:
+        strict: true
+        contexts: ["Validate Terraform"]
+      enforce_admins: null
+      required_linear_history: true
+      restrictions: null
+  - name: develop
     protection:
       required_pull_request_reviews:
         required_approving_review_count: 1
