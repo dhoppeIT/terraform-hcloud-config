@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Environment (stage)
         id: stage
         if: ${{ github.base_ref == 'develop' || github.ref == 'refs/heads/develop' }}
