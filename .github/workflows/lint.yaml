@@ -11,9 +11,11 @@ jobs:
   lint:
     uses: dhoppeIT/github-reusable-workflows/.github/workflows/lint.yaml@main
     with:
+      multiple_workspaces: true
       default_branch: main
       filter_regex_exclude: CHANGELOG.md
       linter_rules_path: .
       validate_all_codebase: false
     secrets:
+      cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
       github-token: ${{ secrets.GITHUB_TOKEN }}
