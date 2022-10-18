@@ -20,7 +20,7 @@ module "hcloud_network" {
 
 module "hcloud_firewall" {
   source  = "dhoppeIT/firewall/hcloud"
-  version = "~> 0.1"
+  version = "~> 0.2"
 
   name = "default"
   rule = [
