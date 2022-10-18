@@ -78,48 +78,6 @@ module "hcloud_firewall" {
 }
 ```
 
-<!--- BEGIN_TF_DOCS --->
-## Requirements
-
-| Name | Version |
-|------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0 |
-| <a name="requirement_hcloud"></a> [hcloud](#requirement\_hcloud) | ~> 1.0 |
-
-## Providers
-
-No providers.
-
-## Modules
-
-| Name | Source | Version |
-|------|--------|---------|
-| <a name="module_hcloud_firewall"></a> [hcloud\_firewall](#module\_hcloud\_firewall) | dhoppeIT/firewall/hcloud | ~> 0.1 |
-| <a name="module_hcloud_network"></a> [hcloud\_network](#module\_hcloud\_network) | dhoppeIT/network/hcloud | ~> 0.3 |
-| <a name="module_hcloud_ssh_key"></a> [hcloud\_ssh\_key](#module\_hcloud\_ssh\_key) | dhoppeIT/ssh_key/hcloud | ~> 0.2 |
-
-## Resources
-
-No resources.
-
-## Inputs
-
-No inputs.
-
-## Outputs
-
-No outputs.
-
-<!--- END_TF_DOCS --->
-
-## Authors
-
-Created and maintained by [Dennis Hoppe](https://github.com/dhoppeIT/).
-
-## License
-
-Apache 2 licensed. See [LICENSE](https://github.com/dhoppeIT/terraform-hcloud-config/blob/develop/LICENSE) for full details.
-
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
@@ -152,3 +110,11 @@ No inputs.
 
 No outputs.
 <!-- END_TF_DOCS -->
+
+## Authors
+
+Created and maintained by [Dennis Hoppe](https://github.com/dhoppeIT/).
+
+## License
+
+Apache 2 licensed. See [LICENSE](https://github.com/dhoppeIT/terraform-hcloud-config/blob/develop/LICENSE) for full details.
