@@ -94,7 +94,7 @@ No providers.
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_hcloud_firewall"></a> [hcloud\_firewall](#module\_hcloud\_firewall) | dhoppeIT/firewall/hcloud | ~> 0.1 |
+| <a name="module_hcloud_firewall"></a> [hcloud\_firewall](#module\_hcloud\_firewall) | dhoppeIT/firewall/hcloud | ~> 0.2 |
 | <a name="module_hcloud_network"></a> [hcloud\_network](#module\_hcloud\_network) | dhoppeIT/network/hcloud | ~> 0.3 |
 | <a name="module_hcloud_ssh_key"></a> [hcloud\_ssh\_key](#module\_hcloud\_ssh\_key) | dhoppeIT/ssh_key/hcloud | ~> 0.2 |
 
@@ -109,7 +109,6 @@ No inputs.
 ## Outputs
 
 No outputs.
-
 <!-- END_TF_DOCS -->
 
 ## Authors
